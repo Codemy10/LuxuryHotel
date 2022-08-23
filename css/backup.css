@@ -1,0 +1,130 @@
+.room-page{
+    background-color: 	#FFFFF0;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    /* padding-bottom: 200px; */
+}
+.our-rooms-container{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    /* background-color: green; */
+    flex-wrap: wrap;
+}
+
+
+.rooms1{
+    margin: 20px;
+    width: 300px;
+    margin-bottom: 50px;
+    /* background-color: aquamarine; */
+    height: 250px;
+    flex-grow: 1;
+}
+.rooms2{
+    margin: 20px;
+    width: 300px;
+    /* background-color: rgb(28, 56, 44); */
+    height: 250px;
+    flex-grow: 1;
+
+}
+.rooms3{
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+    /* background-color: rgb(23, 27, 26); */
+    flex-grow: 1;
+
+}
+.rooms4{
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+    /* background-color: rgb(209, 219, 216); */
+    flex-grow: 1;
+
+}
+.rooms5{
+    margin: 20px;
+    width: 300px;
+    /* background-color: rgb(51, 114, 93); */
+    height: 250px;
+    flex-grow: 1;
+
+}
+.rooms6{
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+    /* background-color: chartreuse; */
+    flex-grow: 1;
+
+}
+.room-images{
+    height: 250px;
+    width: 100%;
+    /* transition-property: background; */
+    transition-duration: 2s;
+}
+.room-images:hover{
+    /* opacity: 0.6; */
+    box-shadow:  5px 5px grey;
+    
+}
+.roomsection-heading{
+    text-align: center;
+    /* padding-top: 50px; */
+    /* padding-bottom: 10px; */
+}
+.roomsection-heading h2{
+    padding: 10px;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.room-title{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: -5px;
+    border:1px solid white;
+
+}
+.room-title a{
+    text-decoration: none;
+    color: black;
+}
+.room-price p{
+    background-color: white;
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.room-price{
+    position: relative;
+    top: 40px;
+    left: 10px;
+}
+.viewall{
+    text-align: center;
+    padding: 80px;
+}
+.viewall a{
+    padding: 15px;
+    /* background-color: gold; */
+    border-radius: 10px;
+    border:3px solid gold;
+    color: gold;
+    text-decoration: none;
+    transition: background;
+
+}
+.viewall a:hover{
+    background-color: gold;
+    color: white;
+}
