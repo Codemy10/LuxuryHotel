@@ -29,6 +29,7 @@
 .newsletter-container{
     background: url('../uploads/antonika-chanel-zTgFtM6M9Gs-unsplash.jpg')center/cover;
     padding: 50px 20px ;
+    background-attachment: fixed;
 }
 
 .newsletter-text p{
