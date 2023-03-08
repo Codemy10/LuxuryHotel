@@ -306,15 +306,15 @@ input[type="submit"]:hover{
     margin: 20px;
     transition-property: background;
     transition-duration: 2s; 
-    background: url('../uploads/fathul-abrar-ZqREbckCRQA-unsplash.jpg');
-    background-position: center;
-    background-size: cover;
-}
-.about-image:hover{
     background: url('../uploads/Hotel-roooms/sidekix-media-g8tb9SXqZVQ-unsplash.jpg');
     background-position: center;
     background-size: cover;
 }
+/* .about-image:hover{
+    background: url('../uploads/Hotel-roooms/sidekix-media-g8tb9SXqZVQ-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+} */
 /* ============================= About page  ================= */
 
 /* ======================our rooms ==================== */
