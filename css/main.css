@@ -1,0 +1,828 @@
+/* Import font file from front.css  */
+@import url(./fonts.css);
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #ffd700;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #f7d202;
+}
+/* bootstrap reset  */
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
+}
+.home{
+    background-color:gold;
+    position: fixed;
+    right: 20px;
+    top: 90vh;
+    border-radius: 2px;
+    z-index: 1;
+    text-align: center;
+}
+.home:hover{
+    background-color: rgb(253, 225, 63);
+}
+.home a i{
+    color: white;
+    padding: 10px 13px;
+    font-size: 25px;
+}
+/* ===========navbar=========== */
+.navbar{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+}
+/* =============== Logo ============== */
+.brandname{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    /* display: inline-block; */
+}
+.brandname a{
+    color: black;
+    text-decoration: none;
+}
+.nav-brand{
+    display: inline-block;
+    padding-left: 180px;
+}
+.nav-menu ul li a i{
+    width:30px;
+    color: #333;
+    padding-left: 5px;
+}
+.brandname i{
+    color: rgb(228, 196, 16);
+}
+/* =============== Logo ============== */
+.nav-menu {   
+    float: right;
+    padding-top: 10px;
+    padding-right:90px;
+}
+.nav-menu ul li{
+    float: left;
+    list-style: none;
+    color: black;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+.nav-menu ul li a:hover{
+    border-bottom: 3px solid rgb(228, 196, 16);
+
+}
+.nav-menu ul li a:active{
+    padding-bottom: 9px;
+    border-bottom: 3px solid rgb(228, 196, 16);
+}
+.nav-menu ul .spec{
+    border: 2px solid rgb(228, 196, 16);
+    padding:7px ;
+    margin-top: -5px;
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+}
+.nav-menu ul .spec:hover{
+    background-color: rgb(228, 196, 16);
+    color: white;
+    border: 2px solid rgb(228, 196, 16);
+
+}
+/* ===========navbar=========== */
+
+/* ============================= Home  ================= */
+
+/* =============== Home background =========== */
+.conataner{
+    background: url('../uploads/Hotel-roooms/cover.jpg') center/cover;
+    /* height: 600px; */
+}
+/* =============== Home background =========== */
+.reserve-form-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+.welcome-text{
+    /* width: 500px; */
+    /* margin: 0 -80px 0 -80px; */
+    flex-grow: 1;
+    padding: 150px 0px 40px 0px;
+}
+.welcome-container{
+    max-width: 500px;
+    color: white;
+}
+.welcome-container h1{
+    font-size: 40px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    padding-bottom: 20px;
+}
+.welcome-container p{
+    padding-bottom: 40px;
+}
+/* =============== Home form =========== */
+.reserve-form{
+    background-color: white;
+    width:300px;
+    padding: 30px;
+    margin: auto;
+}
+.reserve-form h1{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.reserve-form p{
+    padding-bottom: 15px;
+    text-align: center;
+}
+label{
+    padding: 5px;
+    display: block;
+}
+.reserve-form input{
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgb(20, 20, 20);
+    outline: none;
+    border-radius: 3px;
+    padding: 3px;
+}
+.select{
+    width: 100%;
+    padding: 5px 0px;   
+}
+select{
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    /* border: 2px solid rgb(228, 196, 16); */
+    outline: none;
+    border-radius: 3px;
+    padding: px;
+}
+.labels{
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+}
+.right-label{
+    display: inline-block;
+    width: 45%;
+    margin-left: 20px;
+}
+.left-label{
+    display: inline-block;
+    width: 45%;
+}
+input[type="submit"]{
+    padding: 5px;
+    background-color: rgb(228, 196, 16);
+    font-size: 14.5px;
+    border: none;
+    height: 40px;
+    color: white;
+    border-radius: none;
+    margin-bottom: 20px;
+    transition-property: background;
+    transition-duration: 2s;
+}
+input[type="submit"]:hover{
+    background: rgb(255, 239, 147);
+    color: #333;
+}
+
+/* =============== Home Form =========== */
+
+/* === explore now button */
+.welcome-text a{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(228, 196, 16);
+    border-radius: 5px;
+    transition-property: background;
+    transition-duration: 2s;
+    border: none;
+}  
+.welcome-text a:hover{
+    background: gold;
+} 
+/* === explore now button */
+
+/* ============================= Home  ================= */
+
+/* ============================= About page  ================= */
+.about-page{
+       padding:80px 50px; 
+}
+.aboutpage-container{
+    flex-direction: row;
+
+    display: flex;  
+  flex-wrap: wrap;   
+}
+.about-text{
+    /* background-color: rosybrown; */
+    width: 400px;
+    /* height: 400px; */
+    flex-grow: 1;
+    margin: 20px;
+    padding: 20px;
+}
+.about-text h1{
+    padding-bottom: 20px;
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-text h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.about-text p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+.about-btn a,.btn{
+    text-decoration: none;
+    border: 3px solid gold;
+    padding: 15px;
+    transition-property: background;
+    transition-duration: 2s;
+    color: rgb(228, 196, 16);
+}
+.btn{
+    width: 180px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.btn a{
+    text-align: center;
+    /* padding: 20px; */
+    text-decoration: none;
+    color: gold;
+    margin: auto;
+}
+.about-btn a:hover,.btn:hover,.btn a:hover{
+    background: gold;
+    color:white;
+}
+.about-image{
+    width: 400px;
+    height: 400px;
+    flex-grow: 1;
+    margin: 20px;
+    transition-property: background;
+    transition-duration: 2s; 
+    background: url('../uploads/fathul-abrar-ZqREbckCRQA-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.about-image:hover{
+    background: url('../uploads/Hotel-roooms/sidekix-media-g8tb9SXqZVQ-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+}
+/* ============================= About page  ================= */
+
+/* ======================our rooms ==================== */
+
+/* ======================our rooms ==================== */
+
+/* ============================= our service page  ================= */
+.our-service-page{
+    padding: 50px 120px;
+    background-color: #f5f3f0;
+}
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0px 100px;  */
+    /* font-family: monospace; */
+    color: #858a85;
+    justify-content: center;
+    text-align: center;
+}
+.restaurant,.wifi,.rooms,.gym
+,.spa,.conference,.eventcenter,
+.location,.pool,.sportandgames{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #dedede;
+    width: 200px;
+    background-color: #ffff;
+    transition: 0.5s;
+    /* height: 220px; */
+    flex-grow: 1;
+    border-radius: 5px;
+}
+.services-container i{
+    font-size: 50px;
+    padding: 30px;
+    border-radius: 100%;
+    color: #858a85;
+    /* background-color: gold; */
+    margin-bottom: 10px;
+    transition-property: background;
+    transition-duration: 2s;
+}
+.services-container i:hover{
+    color: gold;
+    /* background-color: white; */
+}
+.restaurant:hover,.wifi:hover,.rooms:hover,
+.spa:hover,.conference:hover,.eventcenter:hover,
+.location:hover,.pool:hover,.sportandgames:hover,.gym:hover{
+    /* background-color: gold; */
+    box-shadow: 5px 5px 10px 10px #858a85;
+    /* color: white; */
+}
+.our-service-page h2 {
+    text-align: center;
+    font-size: 45px;
+    padding: 10px;
+    color: #858a85;
+    font-family: monospace;
+}
+.service-p{
+    text-align: center;
+    color: #858a85;
+    padding-bottom: 50px;
+    font-family: monospace;
+    font-size: 15px;
+}
+.service-btn{
+    text-align: center;
+    padding: 50px;
+}
+.service-btn a{
+    padding: 15px;
+    border: 3px solid gold;
+    text-decoration: none;
+    color: gold;
+}
+/* ============================= Testimonial page  ================= */
+.testimonial-page{
+    padding:  50px;
+    background-color: #eeeeee;
+}
+.heading{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.heading1{
+    flex-grow: 1;
+    padding: 20px 0px;
+}
+.heading2{
+    padding: 20px 0px;
+
+}
+.heading1 h2{
+    font-size: 35px;
+}
+.heading2 a{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.testimony-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: darkslategrey; */
+}
+.testimony1,.testimony2,.testimony3{
+    flex-grow: 1;
+    /* background-color: darkorange; */
+    margin: 20px;
+    /* padding: 20px; */
+    /* margin-top: 0px; */
+    width: 300px;
+    text-align: center;
+}
+
+.testimony-text{
+    /* height: 70px; */
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+    border: 1px solid slategrey;
+    transition-property: background;
+    transition-duration: 2s; 
+}
+.testimony-text:hover{
+    box-shadow: 10px 10px rgb(207, 207, 207);
+    margin-top: -10px;
+
+}
+
+.author{
+    display: flex;
+}
+.author-image{
+    flex-grow: 1;
+    /* background-color: chocolate; */
+    text-align: right;
+}
+.authors-info{
+    flex-grow: 1;
+    /* background-color: darkgreen; */
+    text-align: left;
+    padding-top: 15px;
+    margin-left: 10px;
+
+}
+.author-image img{
+    border-radius: 100%;
+}
+.testimony-text h3{
+    padding: 20px;
+    font-size: 25px;
+}
+.rating{
+    padding-bottom: 20px;
+    color: gold;
+}
+.testimony-text p{
+    line-height: 25px;
+    font-family: sans-serif;
+}
+/* ============================= Testimonial page  ================= */
+/* ============================= newsletter page  ================= */
+#newsletter{
+    background: url('../uploads/Hotel-roooms/cover.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*height: 350px;*/
+    /*margin-bottom: 30px;*/
+    background-attachment: fixed;
+    padding: 70px;
+}
+#parallax-2{
+    background: url('../uploads/2.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    /*margin-bottom: 30px;*/
+}
+
+
+.newsletter-text{
+    text-align: center;
+    color: white;
+}
+.newsletter-text h2{
+    font-size: 35px;
+     padding: 20px; 
+}
+.newsletter-text p{
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+.subscribe-form-container{
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+     /*position: absolute; */
+}
+.subscribe-form-container input[type=checkbox]{
+    margin-right: 10px;
+}    
+.subscribe-form-container input[type=email]{
+    width: 100%;
+    padding: 10px;
+    border:2px solid rgb(228, 228, 231);
+    outline: none;
+    font-size: 15px;
+    display: inline-block;
+    border-radius: 20px;
+     /*position: absolute; */
+}
+.subscribe-form-container input[type=email]:hover{
+    border: 2px solid gold;
+}
+.subscribe-form-container label{
+    padding: 20px;
+    font-size: 17.5px;
+    margin-left: 80px; 
+    text-align: center;
+    color: white;
+     margin: auto; 
+}
+.subscribe-form-container button{
+    display: inline-block;
+    position: absolute;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 100%;
+     /*top: 20px; */
+    background-color: rgb(232, 232, 233);
+    border: none;
+    right: 400px;
+     z-index: 1; 
+}
+.subscribe-form-container button:hover{
+    background-color: gold;
+}
+/* ====================== contact us page ====================== */
+.contact-page{
+    padding: 80px 30px;
+    background-color: #f5f3f0;
+}
+.contact-page-heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-page-heading h2{
+    font-size: 35px;
+}
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputfield-container{
+    width: 400px;
+    padding: 30px;
+    flex-grow: 10;
+    /* height: 400px; */
+    /* background-color: #858a85; */
+    margin: 20px;
+    display: flex;
+}
+.contactable-places{
+    width: 300px;
+    flex-grow: 1;
+    /* background-color: #dedede; */
+    /* height: 500px; */
+    margin: 20px;
+    padding: 20px;
+}
+.inputfield{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputfield textarea{
+    resize: none;
+    height: 150px;
+    overflow: hidden;
+}
+.input1,.input2,.input3,.input4,.input5{
+    width: 300px;
+    margin: 20px;
+    flex-grow: 1;
+    background-color: white;
+    /* height: 200px; */
+    padding: 20px;
+}
+.submitfield{
+    padding: 20px;
+}
+.contactable-places{
+    /* text-align: center; */
+    padding: 20px;
+    border-radius: 5px;
+}
+.contactable-places p{
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    /* background-color: teal; */
+}
+/* 
+.phone-text{
+    background-color: rgb(177, 174, 174);
+    padding: 10px;
+    padding-left: 0px;
+    font-size: 15px;
+
+} */
+.contactable-places i{
+    font-size: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 90%;
+}
+.p5 i:hover{
+    color: blue;
+}
+.p6 i:hover{
+    color: rgb(245, 77, 26);
+}
+  .p7 i:hover{
+    color:rgb(57, 170, 207);
+}
+.p3 i:hover{
+    color: rgb(2, 92, 2);
+}
+.p8 i:hover{
+    color: red;
+}
+.p1 i:hover{
+    color:green;
+}
+.p2 i:hover{
+    color: blue;
+}
+.submitfield input{
+    padding: 10px;
+    border-radius: 5px;
+}
+.submitfield input:hover{
+    background-color: gold;
+    color: white;
+}
+/* =============== footer ========= */
+.footer,.copyright{
+    display: flex;
+    padding: 10px 30px;
+    border-top: 1px solid #858a85;
+    border-bottom: 1px solid #858a85;
+    flex-wrap: wrap;
+    color: #666565;
+}
+.footer a{
+    text-decoration: none;
+    color: #666565;
+}
+.footer a:hover{
+    color: rgb(231, 210, 93);
+}
+.footer h4{
+    font-size: 25px;
+    padding: 5px;
+}
+.footer p{
+    padding: 5px;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.text1,.text2,.text3,.text4{
+    /* background-color: wheat; */
+    margin: 20px;
+    flex-grow: 1;
+    padding: 20px;
+    width: 200px;
+}
+.text4{
+    flex-grow: 2;
+}
+.text4 p{
+    text-indent: -10px;
+}
+.icons{
+    margin-left: -30px;
+    text-align: center;
+}
+.icons i{
+    font-size: 20px;
+    /* margin-left: 5px; */
+    padding: 5px;
+}
+#facebook:hover{
+    color: blue;
+}
+#instagram:hover{
+    color: orangered;
+}
+#twitter:hover{
+    color: rgb(81, 181, 214);
+}
+#youtube:hover{
+    color: red;
+}
+#whatsapp:hover{
+    color: green;
+}
+#telegram:hover{
+    color: rgb(39, 167, 209);
+}
+/* =============== footer ========= */
+
+/* ============================= newsletter page  ================= */
+
+
+
+/* ============================= our rooms page  ================= */
+.room-page{
+    background-color: 	#FFFFF0;
+    padding: 50px 120px;
+}
+.our-rooms-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.our-rooms-container .rooms{
+    padding: 0;
+    flex-grow: 1;
+    flex-basis: 300px;
+    position: relative;
+    /* height: 400px; */
+}
+.our-rooms-container .rooms .room-image{
+    height: 100%;
+}
+.our-rooms-container .rooms .pricetag{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    background-color: #fff;
+    padding: 5px;
+}
+.our-rooms-container .rooms .pricetag p{
+    padding: 0;
+    margin: 0;
+}
+.our-rooms-container .rooms .room-title{
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    margin-top: -2.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-rooms-container .rooms a{ 
+    color: #333;
+    text-decoration: none;
+}
+.roomsection-heading{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.roomsection-heading h2 {
+    padding: 10px;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.room-title h3{
+    font-size: 20px;
+}
+.viewall{
+    text-align: center;
+    padding: 80px;
+}
+.viewall a{
+    padding: 15px;
+    /* background-color: gold; */
+    border-radius: 10px;
+    border:3px solid gold;
+    color: gold;
+    text-decoration: none;
+    transition: background;
+
+}
+.viewall a:hover{
+    background-color: gold;
+    color: white;
+}
+.room-img img{
+    width: 100%;
+    height: auto;
+}
+.room-image{
+    width: 100%;
+}
+
+/* ============================= our rooms page  ================= */
