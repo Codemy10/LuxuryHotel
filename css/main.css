@@ -529,19 +529,6 @@ input[type="submit"]:hover{
 .subscribe-form-container input[type=checkbox]{
     margin-right: 10px;
 }    
-.subscribe-form-container input[type=email]{
-    width: 100%;
-    padding: 10px;
-    border:2px solid rgb(228, 228, 231);
-    outline: none;
-    font-size: 15px;
-    display: inline-block;
-    border-radius: 20px;
-     /*position: absolute; */
-}
-.subscribe-form-container input[type=email]:hover{
-    border: 2px solid gold;
-}
 .subscribe-form-container label{
     padding: 20px;
     font-size: 17.5px;
@@ -550,20 +537,35 @@ input[type="submit"]:hover{
     color: white;
      margin: auto; 
 }
-.subscribe-form-container button{
-    display: inline-block;
-    position: absolute;
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 100%;
-     /*top: 20px; */
-    background-color: rgb(232, 232, 233);
-    border: none;
-    right: 400px;
-     z-index: 1; 
+.frm-btn{
+    display: flex;
+    width: 100%;
 }
-.subscribe-form-container button:hover{
+
+.subscribe-form-container input[type=email] {
+    padding: 10px;
+    border: 2px solid gold;
+    outline: none;
+    font-size: 15px;
+    flex-grow: 8;
+}
+.frm-btn button{
+    padding: 5px;
+    border: 2px solid gold;
+    border-left: none;
+    outline: none;
+    font-size: 22px;
+    flex-grow: 1;
     background-color: gold;
+    border: 2px solid gold;
+    color: #fff;
+}
+.subscribe-form-container input[type=email]:focus {
+    border: 2px solid gold;
+}
+.frm-btn button:hover i{
+    /* font-size: 24px; */
+    transform:rotate(30deg);
 }
 /* ====================== contact us page ====================== */
 .contact-page{
